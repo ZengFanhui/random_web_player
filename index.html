@@ -443,7 +443,12 @@
         // 获取视频地址
         async function getVideoUrl() {
             try {
-                const response = await fetch('/api/v1/get_video', {
+                // const response = await fetch('/api/v1/get_video', {
+                //     method: 'GET',
+                //     mode: 'cors'
+                // });
+
+                const response = await fetch('https://api.wwlww.org/v1/get_video', {
                     method: 'GET',
                     mode: 'cors'
                 });
